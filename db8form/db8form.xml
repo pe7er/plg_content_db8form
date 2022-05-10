@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="4.0" type="plugin" group="content" method="upgrade">
+    <name>plg_content_db8form</name>
+    <creationDate>May 2022</creationDate>
+    <author>Peter Martin</author>
+    <authorEmail>joomla@db8.nl</authorEmail>
+    <authorUrl>https://db8.nl</authorUrl>
+    <copyright>Copyright (C) 2022 by Peter Martin</copyright>
+    <license>http://www.gnu.org/licenses/gpl-3.0.html GNU/GPL</license>
+    <version>1.0.0</version>
+    <description>PLG_CONTENT_DB8FORM_DESCRIPTION</description>
+
+    <files>
+        <filename plugin="db8form">db8form.php</filename>
+        <folder>language</folder>
+    </files>
+
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field
+                        name="userGroups"
+                        type="usergrouplist"
+                        label="PLG_CONTENT_DB8FORM_USERGROUPS"
+                        multiple="true"
+                        layout="joomla.form.field.list-fancy-select"
+                        default="0"
+                >
+                    <option value="">PLG_CONTENT_DB8FORM_FILTER_USERGROUP</option>
+                </field>
+            </fieldset>
+        </fields>
+    </config>
+
+</extension>
