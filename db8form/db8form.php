@@ -25,6 +25,15 @@ class PlgContentDb8form extends CMSPlugin
 	 *
 	 * @since  1.0.0
 	 */
+	
+	/**
+	 * Application object.
+	 *
+	 * @var    CMSApplicationInterface
+	 * @since  4.1.0
+	 */
+	
+	protected $app;
 
 	/**
 	 * Set as required the passwords fields when mail to user is set to No
@@ -54,8 +63,8 @@ class PlgContentDb8form extends CMSPlugin
 				//$form->setFieldAttribute('featured', 'disabled', 'true');
 
 				// Hide "Featured" label and field
-				//$document = $app->getDocument();
-				//$document->addStyleDeclaration('.label#jform_featured-lbl, .fieldset#jform_featured{display: none!important;}
+				//$document = $this->app->getDocument();
+				//$document->addStyleDeclaration('.control-group:has(#jform_featured-lbl){display: none;}');
 
 				// Make "Note" required
 				//$form->setFieldAttribute('note', 'required', 'true');
